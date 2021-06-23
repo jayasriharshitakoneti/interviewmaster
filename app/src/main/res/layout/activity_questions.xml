@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.QuestionsActivity">
+
+    <TextView
+        android:id="@+id/oneques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group1"
+        android:layout_marginBottom="16dp"
+        android:text="How much is 2+3+4?"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="347dp">
+
+        <RadioButton
+            android:id="@+id/aa"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/ab"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="8" />
+
+        <RadioButton
+            android:id="@+id/ac"
+            android:layout_width="117dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="9" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group1"
+        android:layout_marginTop="16dp"
+        android:text="Next" />
+
+</RelativeLayout>
